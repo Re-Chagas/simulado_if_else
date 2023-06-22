@@ -8,8 +8,27 @@
 
     //ENTRADA
 
+    const viagem = prompt(`Para qual estado deseja realizar a viagem?(Rio Grande do Sul-RS ou Minas Gerais-MG).`).trim()
+    const dinheiro = Number(prompt(`quanto dinheiro para gastar nessa viagem?`).trim());
+    const dias =  Number(prompt(`quantos dias você ira ficar nesta viagem?`).trim());
 
+    const CalculoDiasRS = 180*dias;
+    const CalculoDiasMG = 210*dias;
     //PROCESSAMENTO
+
+    if(viagem = "RS" && dinheiro > 180 && viagem*dias < dinheiro){
+        alert(`Boa viagem!, você podera ficar ${dias} na sua viagem e o custo sera ${180*dias}`)
+    }
+    else{
+        alert(`sem ferias, esta faltando${CalculoDiasRS-dinheiro}`)
+    }
+    
+    if(viagem = "Mg" && dinheiro > 210 && viagem*dias < dinheiro){
+        alert(`Boa viagem!, você podera ficar ${dias} na sua viagem e o custo sera ${210*dias}`)
+    }
+    else {
+        alert(`sem ferias, esta faltando${CalculoDiasMG-dinheiro}`)
+    }
 
 
     //SAÍDA

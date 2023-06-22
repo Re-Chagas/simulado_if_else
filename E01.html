@@ -7,9 +7,18 @@
 
     //ENTRADA
 
+    const Tutor = Number(prompt(`me informe a nota que seu tutor obteve no terceiro trimestre?`).trim());
+    const AlunoAjudado = Number(prompt(`que nota você obteve com a ajuda do tutor?`).trim());
 
     //PROCESSAMENTO
 
+    if (AlunoAjudado > Tutor){
+        alert(`cria maior que criador!!! ${AlunoAjudado}`)
+    }
+    else{
+       const BoaTutor = AlunoAjudado * 0.10 + Tutor;
+       alert(`Continue ensinando!!! ${BoaTutor}`)
+    }
 
     //SAÍDA
 

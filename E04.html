@@ -8,10 +8,22 @@
 
     //ENTRADA
 
+    const salario = Number(prompt(`quanto voce ganha por mes?`));
+    const cargo = prompt(`qual seu cargo?(Estagiario-E, Programador-P)`)
+    const Whrs = Number(prompt(`quantas horas voce trabalha por dia(6 ou 8)`))
 
     //PROCESSAMENTO
 
+    if(E == 6){
+        const salarioE1 = salario / Whrs;
+        alert(`voce ganha ${salarioE1}`)
+    }
+    else{
+        alert(`Precia se contratado`)
+    }
 
+
+    
     //SAÍDA
 
 </script>
