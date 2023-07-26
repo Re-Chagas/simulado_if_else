@@ -7,7 +7,7 @@
 
     //ENTRADA
 
-    const Tutor = Number(prompt(`me informe a nota que seu tutor obteve no terceiro trimestre?`).trim());
+    const Tutor = Number(prompt(`me informe,que nota seu tutor obteve no terceiro trimestre?`).trim());
     const AlunoAjudado = Number(prompt(`que nota você obteve com a ajuda do tutor?`).trim());
 
     //PROCESSAMENTO
@@ -17,7 +17,7 @@
     }
     else{
        const BoaTutor = AlunoAjudado * 0.10 + Tutor;
-       alert(`Continue ensinando!!! ${BoaTutor}`)
+       alert(`Continue ensinando!!! ${BoaTutor.toFixed(2)}`)
     }
 
     //SAÍDA
